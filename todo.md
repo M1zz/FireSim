@@ -12,3 +12,4 @@
 - [ ] (검토) 실시간 모드 되감기: 상태 스냅샷 저장 후 타임라인 이동
 - [ ] 작은 폰트(.caption, .caption2) → .body 이상으로 교체 (ControlPanel, SensorChartView)
 - [ ] 하드코딩된 한국어 문자열 → String Catalog(ko/en)로 이전
+- [x] GitHub 퍼블릭 레포 배포 (https://github.com/M1zz/FireSim)
