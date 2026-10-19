@@ -1,0 +1,30 @@
+name: FireSim
+options:
+  bundleIdPrefix: com.leeo
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    SWIFT_OBJC_BRIDGING_HEADER: FireSim/Shared/FireSim-Bridging-Header.h
+    MTL_HEADER_SEARCH_PATHS: $(SRCROOT)/FireSim/Shared
+    GENERATE_INFOPLIST_FILE: YES
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_STRICT_CONCURRENCY: minimal
+targets:
+  FireSim:
+    type: application
+    platform: [iOS, macOS]
+    sources:
+      - path: FireSim
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.leeo.firesim
+        PRODUCT_NAME: FireSim
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
